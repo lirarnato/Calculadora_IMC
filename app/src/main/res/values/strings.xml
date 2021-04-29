@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Calculadora_IMC</string>
+    <string name="imc">IMC</string>
+    <string name="peso">Peso (ex 60.8 kg)</string>
+    <string name="calcular">altura</string>
+    <string name="botao">Calcular</string>
 </resources>
