@@ -7,21 +7,21 @@ import androidx.core.widget.doOnTextChanged
 import kotlinx.android.synthetic.main.main_relative.*
 
 
-class MainActivity : AppCompatActivity() {
-
+class MainActivity1 : AppCompatActivity() {
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.main_relative)
         setListeners()
     }
 
     private fun setListeners() {
-        alturaEDT?.doAfterTextChanged { text ->
+            alturaEDT?.doAfterTextChanged { text ->
+                
+            }
 
-        }
-
-        pesoEDT?.doOnTextChanged { text, _, _, _ ->
-
+            pesoEDT?.doOnTextChanged { text, _, _, _ ->
+            
         }
         calculaBTN?.setOnClickListener {
             calcularIMC(pesoEDT.text.toString(), alturaEDT.text.toString())
